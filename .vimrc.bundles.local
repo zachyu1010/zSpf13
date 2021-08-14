@@ -1,0 +1,4 @@
+ "development tool
+Bundle  'rickhowe/diffchar.vim'
+Bundle  'joe-skb7/cscope-maps'
+Bundle 'vim-scripts/OmniCppComplete'

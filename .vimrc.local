@@ -1,0 +1,31 @@
+"--------------
+" Settings
+""--------------
+set noswapfile
+set shell=/bin/bash
+set mouse=
+
+"--------------
+" key mapping
+"--------------
+" copy (write) highlighted text to .vimbuffer
+vmap <leader>c y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
+" paste from buffer
+map <leader>v :r ~/.vimbuffer<CR>
+
+
+"-------------
+" Auto command
+"-------------
+"remove all tailing whitespaces
+autocmd BufWritePre *.cpp,*.h,*.cc,*.py,*.pl %s/\s\+$//e
+" autocmd VimLeave * NERDTreeClose
+"
+"-------------
+" code base
+"-------------
+set tags=$PROJ1/tags,$PROJ2/tags,$PROJ3/tags
+cs add $PROJ1/cscope.out $PROJ1
+cs add $PROJ2/cscope.out $PROJ2
+cs add $PROJ3/cscope.out $PROJ3
+set cscopequickfix=s-,c-,d-,i-,t-,e-,a-
