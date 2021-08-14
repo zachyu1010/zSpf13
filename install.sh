@@ -2,7 +2,7 @@
 # https://github.com/spf13/spf13-vim
 
 # install spf13  packages
-# curl http://j.mp/spf13-vim3 -L -o - | sh
+ curl http://j.mp/spf13-vim3 -L -o - | sh
 
 # set link for zach's customization
 ln -s ~/zSpf13/.vimrc.before.local ~/.vimrc.before.local
