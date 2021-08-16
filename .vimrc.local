@@ -33,7 +33,7 @@ map <leader>v :r ~/.vimbuffer<CR>
 "remove all tailing whitespaces
 autocmd BufWritePre *.cpp,*.h,*.cc,*.py,*.pl %s/\s\+$//e
 " autocmd VimLeave * NERDTreeClose
-"
+
 "-------------
 " code base
 "-------------
