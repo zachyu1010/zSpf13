@@ -33,6 +33,8 @@ map <leader>v :r ~/.vimbuffer<CR>
 "remove all tailing whitespaces
 autocmd BufWritePre *.cpp,*.h,*.cc,*.py,*.pl %s/\s\+$//e
 " autocmd VimLeave * NERDTreeClose
+autocmd BufWritePost *.cpp,*.h,*.cc,*.py,*.pl silent! !cd $PROJ1;ctags -R &
+autocmd BufWritePost *.cpp,*.h,*.cc,*.py,*.pl silent! cs reset
 
 "-------------
 " code base
