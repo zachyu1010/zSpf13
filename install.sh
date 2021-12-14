@@ -6,10 +6,10 @@
  curl http://j.mp/spf13-vim3 -L -o - | sh
 
 # set link for zach's customization
-ln -s ~/zSpf13/.vimrc.before.local ~/.vimrc.before.local
-ln -s ~/zSpf13/.vimrc.bundles.local ~/.vimrc.bundles.local
-ln -s ~/zSpf13/.vimrc.local ~/.vimrc.local
-ln -s ~/zSpf13/plugin/ ~/.vim/plugin
+ln -sf ~/zSpf13/.vimrc.before.local ~/.vimrc.before.local
+ln -sf ~/zSpf13/.vimrc.bundles.local ~/.vimrc.bundles.local
+ln -sf ~/zSpf13/.vimrc.local ~/.vimrc.local
+ln -sf ~/zSpf13/plugin/ ~/.vim/plugin
 
 
 
