@@ -3,6 +3,7 @@
 ""--------------
 set noswapfile
 set shell=/bin/bash
+set tabstop=4 shiftwidth=4 expandtab
 set mouse=
 
 "--------------
@@ -33,7 +34,9 @@ map <leader>v :r ~/.vimbuffer<CR>
 "remove all tailing whitespaces
 autocmd BufWritePre *.cpp,*.h,*.cc,*.py,*.pl %s/\s\+$//e
 " autocmd VimLeave * NERDTreeClose
-"
+autocmd BufWritePost *.cpp,*.h,*.cc,*.py,*.pl silent! !cd $PROJ1;cstag.sh
+autocmd BufWritePost *.cpp,*.h,*.cc,*.py,*.pl silent! cs reset
+
 "-------------
 " code base
 "-------------

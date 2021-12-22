@@ -145,16 +145,10 @@ function! s:MatchToggle()
     nunmap <Leader>h3
     nunmap <Leader>h4
     nunmap <Leader>h5
-    nunmap <Leader>hq
-    nunmap <Leader>hw
-    nunmap <Leader>he
-    nunmap <Leader>hr
-    nunmap <Leader>ht
-    nunmap <Leader>ha
-    nunmap <Leader>hs
-    nunmap <Leader>hd
-    nunmap <Leader>hf
-    nunmap <Leader>hg
+    nunmap <Leader>h6
+    nunmap <Leader>h7
+    nunmap <Leader>h8
+    nunmap <Leader>h9
   else
     let g:match_maps = 1
     for i in range(1, 9)
@@ -170,21 +164,15 @@ function! s:MatchToggle()
     nnoremap <silent> <Leader>F :call <SID>Search(1)<CR>
     nnoremap <silent> <Leader>n :let @/=<SID>Search(0)<CR>
     nnoremap <silent> <Leader>N :let @/=<SID>Search(1)<CR>
-    nnoremap <silent> <Leader>h1 :<C-U>call <SID>DoHighlight(1, 2, v:count)<CR>
-    nnoremap <silent> <Leader>h2 :<C-U>call <SID>DoHighlight(2, 2, v:count)<CR>
-    nnoremap <silent> <Leader>h3 :<C-U>call <SID>DoHighlight(3, 2, v:count)<CR>
-    nnoremap <silent> <Leader>h4 :<C-U>call <SID>DoHighlight(4, 2, v:count)<CR>
-    nnoremap <silent> <Leader>h5 :<C-U>call <SID>DoHighlight(5, 2, v:count)<CR>
-    nnoremap <silent> <Leader>hq :<C-U>call <SID>DoHighlight(6, 2, v:count)<CR>
-    nnoremap <silent> <Leader>hw :<C-U>call <SID>DoHighlight(7, 2, v:count)<CR>
-    nnoremap <silent> <Leader>he :<C-U>call <SID>DoHighlight(8, 2, v:count)<CR>
-    nnoremap <silent> <Leader>hr :<C-U>call <SID>DoHighlight(9, 2, v:count)<CR>
-    nnoremap <silent> <Leader>ht :<C-U>call <SID>DoHighlight(10, 2, v:count)<CR>
-    nnoremap <silent> <Leader>ha :<C-U>call <SID>DoHighlight(11, 2, v:count)<CR>
-    nnoremap <silent> <Leader>hs :<C-U>call <SID>DoHighlight(12, 2, v:count)<CR>
-    nnoremap <silent> <Leader>hd :<C-U>call <SID>DoHighlight(13, 2, v:count)<CR>
-    nnoremap <silent> <Leader>hf :<C-U>call <SID>DoHighlight(14, 2, v:count)<CR>
-    nnoremap <silent> <Leader>hg :<C-U>call <SID>DoHighlight(15, 2, v:count)<CR>
+    nnoremap <silent> <Leader>h1 :<C-U>call <SID>DoHighlight(4, 2, v:count)<CR>
+    nnoremap <silent> <Leader>h2 :<C-U>call <SID>DoHighlight(5, 2, v:count)<CR>
+    nnoremap <silent> <Leader>h3 :<C-U>call <SID>DoHighlight(6, 2, v:count)<CR>
+    nnoremap <silent> <Leader>h4 :<C-U>call <SID>DoHighlight(7, 2, v:count)<CR>
+    nnoremap <silent> <Leader>h5 :<C-U>call <SID>DoHighlight(8, 2, v:count)<CR>
+    nnoremap <silent> <Leader>h6 :<C-U>call <SID>DoHighlight(9, 2, v:count)<CR>
+    nnoremap <silent> <Leader>h7 :<C-U>call <SID>DoHighlight(11, 2, v:count)<CR>
+    nnoremap <silent> <Leader>h8 :<C-U>call <SID>DoHighlight(12, 2, v:count)<CR>
+    nnoremap <silent> <Leader>h9 :<C-U>call <SID>DoHighlight(13, 2, v:count)<CR>
     nnoremap <silent> <Leader>h0 :<C-U>call <SID>UndoHighlight(2)<CR>
   endif
   call s:WindowMatches(g:match_maps)
