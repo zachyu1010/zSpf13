@@ -4,6 +4,7 @@
 
 # install spf13  packages
  #curl http://j.mp/spf13-vim3 -L -o - | sh
+ ~/.spf13-vim-3/bootstrap.sh
 
 # set link for zach's customization
 ln -sf ~/.spf13-vim-3/.vimrc ~/.vimrc
@@ -15,5 +16,7 @@ ln -sf ~/zSpf13/.vimrc.local ~/.vimrc.local
 ln -sf ~/zSpf13/plugin/ ~/.vim/plugin
 
 
+# set link for zach's customization
+ln -sf ~/zSpf13/.tmux.conf ~/.tmux.conf
 
 
