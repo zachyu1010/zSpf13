@@ -32,10 +32,10 @@ map <leader>v :r ~/.vimbuffer<CR>
 " Auto command
 "-------------
 "remove all tailing whitespaces
-autocmd BufWritePre *.cpp,*.h,*.cc,*.py,*.pl %s/\s\+$//e
+" autocmd BufWritePre *.cpp,*.h,*.cc,*.py,*.pl %s/\s\+$//e
 " autocmd VimLeave * NERDTreeClose
-autocmd BufWritePost *.cpp,*.h,*.cc,*.py,*.pl silent! !cd $PROJ1;cstag.sh
-autocmd BufWritePost *.cpp,*.h,*.cc,*.py,*.pl silent! cs reset
+"autocmd BufWritePost *.cpp,*.h,*.cc,*.py,*.pl silent! !cd $PROJ1;cstag.sh
+"autocmd BufWritePost *.cpp,*.h,*.cc,*.py,*.pl silent! cs reset
 
 "-------------
 " code base
@@ -45,3 +45,9 @@ cs add $PROJ1/cscope.out $PROJ1
 cs add $PROJ2/cscope.out $PROJ2
 cs add $PROJ3/cscope.out $PROJ3
 set cscopequickfix=s-,c-,d-,i-,t-,e-,a-
+
+
+"-------------
+" vim make
+"-------------
+set makeprg=make\ -j\ 32\ 2>&1\ \\|\ tee\ build.log

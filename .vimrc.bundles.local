@@ -8,6 +8,7 @@ Bundle  'vim-scripts/OmniCppComplete'
 " session manager
 Bundle  'xolox/vim-misc'
 Bundle  'xolox/vim-session'
+Bundle  'tpope/vim-dispatch'
 
 "=====================================
 " customized unInstall
