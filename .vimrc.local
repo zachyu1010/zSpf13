@@ -50,4 +50,4 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-,a-
 "-------------
 " vim make
 "-------------
-set makeprg=make\ -j\ 32\ -C\ $PROJ1/build\ 2>&1\ \\|\ tee\ build.log
+set makeprg=make\ -j\ 32\ -C\ $PROJ1/build\ 2>&1\ \\|\ tee\ $PROJ1/build.log
