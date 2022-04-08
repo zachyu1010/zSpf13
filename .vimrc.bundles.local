@@ -9,6 +9,7 @@ Bundle  'vim-scripts/OmniCppComplete'
 Bundle  'xolox/vim-misc'
 Bundle  'xolox/vim-session'
 Bundle  'tpope/vim-dispatch'
+Bundle  'vim-scripts/dirdiff.vim'
 
 "=====================================
 " customized unInstall
