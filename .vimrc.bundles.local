@@ -9,9 +9,13 @@ Bundle  'vim-scripts/OmniCppComplete'
 Bundle  'xolox/vim-misc'
 Bundle  'xolox/vim-session'
 Bundle  'tpope/vim-dispatch'
+" dir diff
 Bundle  'vim-scripts/dirdiff.vim'
-
+" mark: Highlight several words in different colors simultaneously
+Bundle  'inkarkat/vim-ingo-library'
+Bundle  'inkarkat/vim-mark'
 "=====================================
 " customized unInstall
 "=====================================
 UnBundle 'vim-scripts/sessionman.vim'
+

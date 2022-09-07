@@ -1,4 +1,5 @@
 let g:spf13_no_autochdir = 1
 let g:AutoPairs = {}
 let g:session_autosave = 'no'
+let g:session_autoload = 'no'
 let g:DiffExpr = 1

@@ -3,7 +3,9 @@
 # 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
 
 # install spf13  packages
- curl http://j.mp/spf13-vim3 -L -o - | sh
+# download original package: curl http://j.mp/spf13-vim3 -L -o - | sh
+# the following is to download from zachyu's own copy.
+./bootstrap.sh
 
 # set link for zach's customization
 ln -sf ~/.spf13-vim-3/.vimrc ~/.vimrc
