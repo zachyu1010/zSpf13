@@ -6,8 +6,6 @@ Bundle  'rickhowe/diffchar.vim'
 Bundle  'joe-skb7/cscope-maps'
 Bundle  'vim-scripts/OmniCppComplete'
 " session manager
-Bundle  'xolox/vim-misc'
-Bundle  'xolox/vim-session'
 Bundle  'tpope/vim-dispatch'
 " dir diff
 Bundle  'vim-scripts/dirdiff.vim'
@@ -18,4 +16,6 @@ Bundle  'inkarkat/vim-mark'
 " customized unInstall
 "=====================================
 UnBundle 'vim-scripts/sessionman.vim'
+UnBundle  'xolox/vim-misc'
+UnBundle  'xolox/vim-session'
 
