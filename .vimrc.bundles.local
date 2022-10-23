@@ -12,7 +12,11 @@ Bundle  'vim-scripts/dirdiff.vim'
 " mark: Highlight several words in different colors simultaneously
 Bundle  'inkarkat/vim-ingo-library'
 Bundle  'inkarkat/vim-mark'
+" dec 2 hex or hex to dec for ascii txt
 Bundle  'rr-/vim-hexdec'
+" clang format
+Bundle 'rhysd/vim-clang-format'
+
 "=====================================
 " customized unInstall
 "=====================================
