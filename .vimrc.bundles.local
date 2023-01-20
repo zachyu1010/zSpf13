@@ -5,8 +5,6 @@
 Bundle  'rickhowe/diffchar.vim'
 Bundle  'joe-skb7/cscope-maps'
 Bundle  'vim-scripts/OmniCppComplete'
-" session manager
-Bundle  'tpope/vim-dispatch'
 " dir diff
 Bundle  'vim-scripts/dirdiff.vim'
 " mark: Highlight several words in different colors simultaneously
@@ -16,10 +14,15 @@ Bundle  'inkarkat/vim-mark'
 Bundle  'rr-/vim-hexdec'
 " clang format
 Bundle 'rhysd/vim-clang-format'
+" mark/signature
+Bundle 'kshenoy/vim-signature'
+" Make in a panel 
+Bundle  'tpope/vim-dispatch'
 
 "=====================================
 " customized unInstall
 "=====================================
+" session manager
 UnBundle 'vim-scripts/sessionman.vim'
 UnBundle  'xolox/vim-misc'
 UnBundle  'xolox/vim-session'
